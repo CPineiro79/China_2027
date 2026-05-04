@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje a China 2027 - Carlos & Familia</title>
+    <title>China Highlights: Triángulo Dorado + Zhangjiajie | Itinerario Familiar 2027</title>
     <style>
         * {
             margin: 0;
@@ -11,1152 +11,1023 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-color: #c41e3a;
-            --secondary-color: #ffd700;
-            --dark-color: #1a1a2e;
-            --light-color: #f4f4f4;
-            --text-color: #333;
-            --success-color: #28a745;
-            --warning-color: #ffc107;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
+            color: #333;
+            background: #fff;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
 
         header {
-            background: linear-gradient(135deg, var(--dark-color) 0%, #16213e 100%);
-            color: white;
-            padding: 3rem 0;
             text-align: center;
-            border-bottom: 5px solid var(--secondary-color);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            padding: 2rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 2rem;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 1.8rem;
+            color: #1a1a2e;
             margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         header .subtitle {
-            font-size: 1.3rem;
-            color: var(--secondary-color);
-            font-weight: 300;
-        }
-
-        .trip-info {
-            background: white;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .info-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 5px solid var(--primary-color);
-            transition: transform 0.3s ease;
-        }
-
-        .info-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .info-card h3 {
-            color: var(--dark-color);
-            margin-bottom: 0.5rem;
+            color: #666;
             font-size: 1.1rem;
         }
 
-        .info-card p {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--primary-color);
+        .action-bar {
+            text-align: center;
+            margin: 1rem 0 2rem 0;
         }
 
-        .section {
-            background: white;
-            margin: 2rem 0;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .section h2 {
-            color: var(--dark-color);
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid var(--secondary-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .section h2::before {
-            content: "🏮";
-        }
-
-        .itinerary-day {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            margin: 1.5rem 0;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 5px solid var(--primary-color);
-            transition: all 0.3s ease;
-        }
-
-        .itinerary-day:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transform: translateX(5px);
-        }
-
-        .day-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;
-            background: var(--dark-color);
-            color: white;
-            padding: 0.8rem;
-            border-radius: 8px;
-        }
-
-        .day-number {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-
-        .day-date {
-            font-size: 1rem;
-        }
-
-        .day-location {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .day-content {
-            padding: 0.5rem 0;
-        }
-
-        .day-content h4 {
-            color: var(--dark-color);
-            margin: 1rem 0 0.5rem 0;
-            font-size: 1.1rem;
-        }
-
-        .day-content ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .day-content li {
-            margin: 0.3rem 0;
-        }
-
-        .hotel-badge {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
+        .action-bar button {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
             font-size: 0.9rem;
-            margin: 0.2rem;
+            transition: all 0.2s;
         }
 
-        .meal-badge {
-            display: inline-block;
-            background: var(--success-color);
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            margin: 0.2rem;
+        .action-bar button:hover {
+            background: #e9ecef;
+            border-color: #ccc;
         }
 
-        .transport-badge {
-            display: inline-block;
-            background: #17a2b8;
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            margin: 0.2rem;
+        section {
+            margin-bottom: 2.5rem;
         }
 
-        .budget-table {
+        section h2 {
+            font-size: 1.4rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .info-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.5rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
         }
 
-        .budget-table th {
-            background: var(--dark-color);
+        .info-table th,
+        .info-table td {
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .info-table th {
+            background: #f8f9fa;
+            width: 35%;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .info-table td {
+            background: #fff;
+        }
+
+        .itinerary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        .itinerary-table th {
+            background: #1a1a2e;
             color: white;
-            padding: 1rem;
+            padding: 0.75rem;
             text-align: left;
             font-weight: 600;
         }
 
-        .budget-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #ddd;
+        .itinerary-table td {
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            vertical-align: top;
         }
 
-        .budget-table tr:nth-child(even) {
+        .itinerary-table tr:nth-child(even) {
             background: #f8f9fa;
         }
 
-        .budget-table tr:hover {
-            background: #e9ecef;
+        .day-header {
+            background: #1a1a2e !important;
+            color: white !important;
+            font-weight: 600;
         }
 
-        .price-original {
-            text-decoration: line-through;
-            color: #999;
-            font-size: 0.9rem;
+        .day-header td {
+            border-bottom: 2px solid #ffd700 !important;
         }
 
-        .price-new {
-            color: var(--success-color);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .savings {
-            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-            text-align: center;
-            border: 2px solid var(--success-color);
-        }
-
-        .savings h3 {
-            color: var(--dark-color);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .savings .amount {
-            font-size: 2.5rem;
-            color: var(--success-color);
-            font-weight: bold;
-        }
-
-        .celiac-alert {
-            background: linear-gradient(135deg, #fff6bf 0%, #ffe6a8 100%);
-            border-left: 5px solid var(--warning-color);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 10px;
-        }
-
-        .celiac-alert h3 {
-            color: #b8860b;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .celiac-alert ul {
-            margin-left: 1.5rem;
-        }
-
-        .celiac-alert li {
-            margin: 0.5rem 0;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-            text-align: center;
-        }
-
-        .highlight-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .modification-tag {
-            display: inline-block;
-            background: var(--warning-color);
-            color: var(--dark-color);
-            padding: 0.2rem 0.6rem;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            margin-left: 0.5rem;
+        .modified-day {
+            background: #d4edda !important;
+            border-left: 4px solid #28a745;
         }
 
         .removed-tag {
+            display: inline-block;
             background: #dc3545;
             color: white;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
         }
 
-        footer {
-            background: var(--dark-color);
+        .optimized-tag {
+            display: inline-block;
+            background: #17a2b8;
             color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
         }
 
-        .weather-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+        .celiac-alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .celiac-alert strong {
+            color: #856404;
+        }
+
+        .important-note {
+            background: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .hotel-table,
+        .transport-table,
+        .weather-table,
+        .shopping-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        .hotel-table th,
+        .transport-table th,
+        .weather-table th,
+        .shopping-table th {
+            background: #f8f9fa;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #e0e0e0;
+        }
+
+        .hotel-table td,
+        .transport-table td,
+        .weather-table td,
+        .shopping-table td {
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+
+        .hotel-table tr:nth-child(even),
+        .transport-table tr:nth-child(even),
+        .weather-table tr:nth-child(even),
+        .shopping-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .budget-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .budget-summary .amount {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .budget-summary .note {
+            font-size: 0.9rem;
+            opacity: 0.9;
             margin-top: 1rem;
         }
 
-        .weather-card {
-            background: linear-gradient(135deg, #87CEEB 0%, #98D8E8 100%);
-            padding: 1rem;
-            border-radius: 10px;
+        .emoji {
+            margin-right: 0.25rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
             text-align: center;
-        }
-
-        .weather-card h4 {
-            margin-bottom: 0.5rem;
-            color: var(--dark-color);
-        }
-
-        .temp-range {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .section {
-                padding: 1.5rem;
-            }
-            
-            .day-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
-            }
-        }
-
-        .print-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .print-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
         }
 
         @media print {
-            .print-btn {
+            .action-bar {
                 display: none;
             }
             
             body {
-                background: white;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .info-table th,
+            .info-table td,
+            .itinerary-table th,
+            .itinerary-table td {
+                display: block;
+                width: 100%;
             }
             
-            .section, .trip-info {
-                box-shadow: none;
-                break-inside: avoid;
+            .info-table th {
+                background: #e9ecef;
             }
-        }
-
-        .city-icon {
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
-        }
-
-        .important-note {
-            background: #fff3cd;
-            border-left: 5px solid var(--warning-color);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-        }
-
-        .important-note strong {
-            color: #856404;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🏮 Viaje a China 2027 🏮</h1>
-        <p class="subtitle">Beijing • Xi'an • Zhangjiajie • Shanghai</p>
-        <p class="subtitle">1-14 de Agosto, 2027 | 5 Personas</p>
+        <h1>🏮 China Highlights: Triángulo Dorado + Zhangjiajie</h1>
+        <p class="subtitle">Itinerario Familiar | 12 Días / 11 Noches | Agosto 2027</p>
     </header>
 
-    <div class="container">
-        <!-- Información General -->
-        <div class="trip-info">
-            <h2>📋 Información del Viaje</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>📅 Fechas</h3>
-                    <p>1-14 Agosto 2027</p>
-                    <small>12 días de tour (modificado)</small>
-                </div>
-                <div class="info-card">
-                    <h3>👥 Viajeros</h3>
-                    <p>5 Personas</p>
-                    <small>2 habitaciones + cama extra</small>
-                </div>
-                <div class="info-card">
-                    <h3>🏨 Categoría</h3>
-                    <p>4 Estrellas</p>
-                    <small>Hoteles boutique seleccionados</small>
-                </div>
-                <div class="info-card">
-                    <h3>🍜 Especial</h3>
-                    <p>Sin Gluten</p>
-                    <small>Protocolo celiaquía estricto</small>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modificaciones Realizadas -->
-        <div class="section">
-            <h2>✂️ Modificaciones Aplicadas</h2>
-            <div class="highlight-box">
-                <h3>Itinerario Optimizado</h3>
-                <p>Se han realizado los siguientes cambios para mejorar la experiencia y reducir costes:</p>
-            </div>
-            
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <span class="day-number">Cambio 1</span>
-                    <span class="modification-tag removed-tag">ELIMINADO</span>
-                </div>
-                <div class="day-content">
-                    <h4>❌ Eliminación de Furong (Día 9 original)</h4>
-                    <ul>
-                        <li>Se elimina la visita al Pueblo Furong y el puente de cristal</li>
-                        <li>Ahorro estimado: <strong>CNY 5.200</strong> (~€658)</li>
-                        <li>Se evita un traslado largo (1.5h en coche) y una noche adicional</li>
-                        <li>Más tiempo para disfrutar Zhangjiajie y Shanghai</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <span class="day-number">Cambio 2</span>
-                    <span class="modification-tag removed-tag">ELIMINADO</span>
-                </div>
-                <div class="day-content">
-                    <h4>❌ Eliminación del Día Libre en Shanghai (Día 13 original)</h4>
-                    <ul>
-                        <li>Se elimina el día 13 "libre" en Shanghai</li>
-                        <li>Ahorro estimado: <strong>CNY 3.400</strong> (~€430)</li>
-                        <li>El tour se reduce de 14 a 12 días efectivos</li>
-                        <li>Más eficiente y menos tiempo muerto</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <span class="day-number">Cambio 3</span>
-                    <span class="modification-tag">OPTIMIZADO</span>
-                </div>
-                <div class="day-content">
-                    <h4>✈️ Vuelo en lugar de Tren (Día 9)</h4>
-                    <ul>
-                        <li><strong>Original:</strong> Tren G221 Furongzhen → Shanghai (6h 54min, 1ª clase)</li>
-                        <li><strong>Modificado:</strong> Vuelo directo Zhangjiajie (DYG) → Shanghai (PVG/SHA) ~2h</li>
-                        <li>Coste similar pero <strong>ahorro de ~5 horas</strong> de viaje</li>
-                        <li>Más cómodo para el grupo, especialmente en agosto con calor</li>
-                        <li>Menos traslados con equipaje</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="savings">
-                <h3>💰 Ahorro Total Estimado</h3>
-                <div class="amount">CNY 8.600 (~€1.090)</div>
-                <p>Reducción del 7.2% sobre el presupuesto original</p>
-            </div>
-        </div>
-
-        <!-- Presupuesto -->
-        <div class="section">
-            <h2>💵 Presupuesto Detallado</h2>
-            
-            <table class="budget-table">
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Original</th>
-                        <th>Modificado</th>
-                        <th>Diferencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Total Tour (5 personas)</strong></td>
-                        <td class="price-original">CNY 119.104</td>
-                        <td class="price-new">~CNY 110.500</td>
-                        <td style="color: var(--success-color); font-weight: bold;">-CNY 8.600</td>
-                    </tr>
-                    <tr>
-                        <td>Por adulto (habitación doble)</td>
-                        <td class="price-original">CNY 23.996 (€3.038)</td>
-                        <td class="price-new">~CNY 22.100 (€2.798)</td>
-                        <td style="color: var(--success-color);">-€240</td>
-                    </tr>
-                    <tr>
-                        <td>Por adulto (cama extra)</td>
-                        <td class="price-original">CNY 23.121 (€2.927)</td>
-                        <td class="price-new">~CNY 21.300 (€2.696)</td>
-                        <td style="color: var(--success-color);">-€231</td>
-                    </tr>
-                    <tr style="background: #d4edda; font-weight: bold;">
-                        <td><strong>TOTAL POR PERSONA</strong><br><small>(incluyendo vuelos intern. estimados)</small></td>
-                        <td class="price-original">~€3.638 - €3.938</td>
-                        <td class="price-new">~€3.398 - €3.698</td>
-                        <td style="color: var(--success-color);">✅ Dentro de €4.000</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="important-note">
-                <strong>💡 Nota importante:</strong> 
-                Tipo de cambio aplicado: 1 EUR = 7.90 CNY. Los precios en euros pueden variar según el tipo de cambio al momento del pago. 
-                Vuelos internacionales estimados: €600-900 por persona (agosto 2027).
-            </div>
-
-            <div class="info-grid" style="margin-top: 2rem;">
-                <div class="info-card" style="border-left-color: #ffc107;">
-                    <h3>💳 Depósito (10%)</h3>
-                    <p>~CNY 11.050</p>
-                    <small>~€1.399 a reservar</small>
-                </div>
-                <div class="info-card" style="border-left-color: #28a745;">
-                    <h3>📅 Pago Final</h3>
-                    <p>~CNY 99.450</p>
-                    <small>Antes del 2 Julio 2027</small>
-                </div>
-            </div>
-        </div>
-
-        <!-- Itinerario Detallado -->
-        <div class="section">
-            <h2>🗺️ Itinerario Detallado (12 Días)</h2>
-
-            <!-- Día 1 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 1</span>
-                        <span class="day-date">| Domingo 1 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🛬</span>Beijing</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Beijing Peace Hotel 4*</span>
-                    <span class="meal-badge">Habitación Deluxe</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li>Llegada a Beijing</li>
-                        <li>Traslado privado aeropuerto → hotel</li>
-                        <li>Check-in y descanso</li>
-                    </ul>
-                    
-                    <span class="transport-badge">✈️ Traslado incluido</span>
-                </div>
-            </div>
-
-            <!-- Día 2 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 2</span>
-                        <span class="day-date">| Lunes 2 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🧱</span>Beijing</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Beijing Peace Hotel 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Gran Muralla - Sección Mutianyu:</strong> Teleférico ida + tobogán vuelta</li>
-                        <li><strong>Hutongs Antiguos y Modernos:</strong> Desde templos antiguos a cafés hipsters</li>
-                        <li>Calle Niujie, templo milenario, Lanman Hutong, South Banjie Hutong</li>
-                        <li>Callejón Daji y Academia Guangyang</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 90)</span>
-                </div>
-            </div>
-
-            <!-- Día 3 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 3</span>
-                        <span class="day-date">| Martes 3 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🏯</span>Beijing</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Beijing Peace Hotel 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Plaza Tian'anmen:</strong> La plaza más grande del mundo</li>
-                        <li><strong>Ciudad Prohibida:</strong> 24 emperadores, 1420-1911</li>
-                        <li><strong>Parque Jingshan:</strong> Vistas panorámicas de la Ciudad Prohibida</li>
-                        <li><strong>Templo del Cielo:</strong> Arquitectura Ming y ejercicio matutino local</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Pato Laqueado (CNY 150)</span>
-                </div>
-            </div>
-
-            <!-- Día 4 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 4</span>
-                        <span class="day-date">| Miércoles 4 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🚄</span>Beijing → Xi'an</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Xi'an Eastern House Boutique 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Palacio de Verano:</strong> Jardines imperiales y lago (mañana)</li>
-                        <li><strong>Tren G323:</strong> Beijing Oeste → Xi'an Norte | 15:00 - 19:12</li>
-                        <li>Traslados hotel-tren y tren-hotel incluidos</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚄 Tren 1ª Clase</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 90)</span>
-                </div>
-            </div>
-
-            <!-- Día 5 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 5</span>
-                        <span class="day-date">| Jueves 5 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🗿</span>Xi'an</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Xi'an Eastern House Boutique 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Barrio Musulmán:</strong> 500m de avenida con gastronomía halal</li>
-                        <li><strong>Guerreros de Terracota:</strong> 7.000 figuras únicas, 210 a.C.</li>
-                        <li>Excavación en 3 hoyas, a 1.5h de Xi'an</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 70)</span>
-                    
-                    <div class="celiac-alert" style="margin-top: 1rem;">
-                        <strong>⚠️ Protocolo Celiaquía:</strong> El Barrio Musulmán tiene opciones sin gluten naturales (carnes a la parrilla, arroz). El guía supervisará la preparación.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Día 6 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 6</span>
-                        <span class="day-date">| Viernes 6 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">✈️</span>Xi'an → Zhangjiajie</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Pullman Zhangjiajie 4*</span>
-                    <span class="meal-badge">D</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Pequeña Pagoda del Ganso Salvaje:</strong> Estructura Tang de 15 pisos</li>
-                        <li><strong>Muralla de Xi'an:</strong> Defensa medieval completa (opción bicicleta)</li>
-                        <li><strong>Vuelo 3U3257:</strong> Xi'an → Zhangjiajie | 14:35 - 16:05</li>
-                    </ul>
-                    
-                    <span class="transport-badge">✈️ Vuelo + Traslados</span>
-                </div>
-            </div>
-
-            <!-- Día 7 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 7</span>
-                        <span class="day-date">| Sábado 7 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🏔️</span>Zhangjiajie</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Pullman Zhangjiajie 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Parque Forestal Nacional:</strong> Patrimonio UNESCO 1992</li>
-                        <li><strong>Yuanjiajie:</strong> Montaña Hallelujah (Avatar)</li>
-                        <li><strong>Ascensor Bailong:</strong> 335m, el más alto del mundo</li>
-                        <li><strong>Montaña Tianzishan:</strong> Teleférico + 80 plataformas naturales</li>
-                        <li>Caminata: 4-5 horas aproximadamente</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 90)</span>
-                    
-                    <div class="important-note">
-                        <strong>🥾 Importante:</strong> Calzado antideslizante obligatorio. Hay pocas señales en inglés. Evitar horas pico en ascensores.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Día 8 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 8</span>
-                        <span class="day-date">| Domingo 8 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🌉</span>Zhangjiajie</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Pullman Zhangjiajie 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Montaña Tianmen:</strong> "El alma de Zhangjiajie"</li>
-                        <li><strong>Teleférico más largo del mundo:</strong> 30 minutos hasta la cima</li>
-                        <li><strong>Pasarela de Cristal:</strong> 60m largo, 1.6m ancho, 1.430m altura</li>
-                        <li><strong>Cueva del Cielo:</strong> Formación natural impresionante</li>
-                        <li>Árboles antiguos, acantilados tallados</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 90)</span>
-                </div>
-            </div>
-
-            <!-- Día 9 - MODIFICADO -->
-            <div class="itinerary-day" style="border-left-color: #28a745; background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 9</span>
-                        <span class="day-date">| Lunes 9 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">✈️</span>Zhangjiajie → Shanghai</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Hengshan Garden Hotel 4*</span>
-                    <span class="meal-badge">D</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Vuelo directo:</strong> Zhangjiajie (DYG) → Shanghai (PVG/SHA) | ~2 horas</li>
-                        <li>Mañana libre en Zhangjiajie o descanso</li>
-                        <li>Traslado aeropuerto → hotel en Shanghai</li>
-                        <li><strong>The Bund al atardecer:</strong> Primer contacto con Shanghai</li>
-                    </ul>
-                    
-                    <span class="transport-badge">✈️ Vuelo + Traslados</span>
-                    
-                    <div class="important-note" style="margin-top: 1rem; background: #d4edda; border-left-color: #28a745;">
-                        <strong>✅ Optimización:</strong> Se eliminan 5 horas de viaje vs. el tren original. Más cómodo y eficiente.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Día 10 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 10</span>
-                        <span class="day-date">| Martes 10 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🌆</span>Shanghai</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Hengshan Garden Hotel 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Torre de Shanghai:</strong> 2º edificio más alto del mundo (632m)</li>
-                        <li><strong>Templo de Buda de Jade:</strong> Dos estatuas de jade blanco</li>
-                        <li><strong>Jardín Yuyuan:</strong> Jardín privado clásico chino</li>
-                        <li><strong>Concesión Francesa:</strong> Barrio Xintiandi, arquitectura colonial</li>
-                        <li><strong>The Bund:</strong> Edificios coloniales + rascacielos futuristas</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 80)</span>
-                </div>
-            </div>
-
-            <!-- Día 11 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 11</span>
-                        <span class="day-date">| Miércoles 11 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🚤</span>Shanghai → Tongli → Shanghai</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Hengshan Garden Hotel 4*</span>
-                    <span class="meal-badge">D</span>
-                    <span class="meal-badge">A</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li><strong>Excursión a Suzhou/Tongli:</strong> 220km ida y vuelta</li>
-                        <li><strong>Pueblo de Agua Tongli:</strong> 1.000 años de historia, 15 ríos, 49 puentes</li>
-                        <li><strong>Barca tradicional:</strong> Recorrido por los canales</li>
-                        <li><strong>Jardín del Maestro de Redes:</strong> El jardín clásico más pequeño (5.000m²)</li>
-                        <li><strong>Calle Pingjiang:</strong> Calle histórica de 800 años, Patrimonio UNESCO</li>
-                    </ul>
-                    
-                    <span class="transport-badge">🚗 Privado (4h total)</span>
-                    <span class="meal-badge">Almuerzo: Restaurante Local (CNY 80)</span>
-                </div>
-            </div>
-
-            <!-- Día 12 -->
-            <div class="itinerary-day">
-                <div class="day-header">
-                    <div>
-                        <span class="day-number">Día 12</span>
-                        <span class="day-date">| Jueves 12 Agosto 2027</span>
-                    </div>
-                    <div class="day-location"><span class="city-icon">🛫</span>Salida Shanghai</div>
-                </div>
-                <div class="day-content">
-                    <h4>🏨 Alojamiento</h4>
-                    <span class="hotel-badge">Check-out</span>
-                    <span class="meal-badge">D</span>
-                    
-                    <h4>📋 Actividades</h4>
-                    <ul>
-                        <li>Desayuno en el hotel</li>
-                        <li>Check-out antes de las 12:00</li>
-                        <li><strong>Traslado privado:</strong> Hotel → Aeropuerto Pudong</li>
-                        <li>Vuelo de regreso a casa</li>
-                    </ul>
-                    
-                    <span class="transport-badge">✈️ Traslado incluido</span>
-                    
-                    <div class="highlight-box" style="margin-top: 1.5rem;">
-                        <h3>🎉 ¡Fin del Viaje!</h3>
-                        <p>12 días inolvidables descubriendo la esencia de China</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Hoteles -->
-        <div class="section">
-            <h2>🏨 Hoteles Seleccionados</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>🏯 Beijing (3 noches)</h3>
-                    <p><strong>Beijing Peace Hotel 4*</strong></p>
-                    <small>No.3 Jinyu Lane, Dongcheng District<br>Tel: 010-65128833<br>Ubicación céntrica cerca de Wangfujing</small>
-                </div>
-                <div class="info-card">
-                    <h3>🗿 Xi'an (2 noches)</h3>
-                    <p><strong>Xi'an Eastern House Boutique 4*</strong></p>
-                    <small>300m west of Fanxiang, South Street<br>Tel: 029-89625555<br>Hotel boutique con encanto</small>
-                </div>
-                <div class="info-card">
-                    <h3>🏔️ Zhangjiajie (3 noches)</h3>
-                    <p><strong>Pullman Zhangjiajie 4*</strong></p>
-                    <small>Huajuan Road, Wulingyuan District<br>Tel: 0744-8888888<br>Cocina internacional (GF disponible)</small>
-                </div>
-                <div class="info-card">
-                    <h3>🌆 Shanghai (3 noches)</h3>
-                    <p><strong>Hengshan Garden Hotel 4*</strong></p>
-                    <small>516 Hengshan Road<br>Tel: 021-64155588<br>Concesión Francesa, zona tranquila</small>
-                </div>
-            </div>
-        </div>
-
-        <!-- Protocolo Celiaquía -->
-        <div class="section">
-            <h2>🍜 Protocolo Celiaquía Estricto</h2>
-            <div class="celiac-alert">
-                <h3>⚠️ Información Crítica</h3>
-                <p><strong>Viajera:</strong> Hija de 14 años con enfermedad celíaca estricta</p>
-            </div>
-
-            <div class="itinerary-day">
-                <h4>📋 Medidas Implementadas</h4>
-                <ul>
-                    <li><strong>Guías informados:</strong> Todos los guías han recibido briefing sobre protocolos sin gluten</li>
-                    <li><strong>Tarjetas en chino:</strong> "Sin trigo, sin salsa de soja con trigo, sin contaminación cruzada, utensilios dedicados"</li>
-                    <li><strong>Restaurantes seleccionados:</strong> Prioridad a establecimientos con experiencia en dietas especiales</li>
-                    <li><strong>Hoteles 4*:</strong> Pullman Zhangjiajie y Hengshan Garden pueden preparar desayunos GF seguros</li>
-                    <li><strong>Supervisión directa:</strong> El guía supervisará personalmente la preparación de comidas en restaurantes locales</li>
-                </ul>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-card" style="border-left-color: #28a745;">
-                    <h3>✅ Ciudades Seguras</h3>
-                    <ul style="margin-top: 0.5rem; margin-left: 1.2rem;">
-                        <li><strong>Shanghai:</strong> Muy internacional. Restaurantes GF certificados: Element Fresh, Pure & Whole</li>
-                        <li><strong>Beijing:</strong> Opciones internacionales disponibles</li>
-                    </ul>
-                </div>
-                <div class="info-card" style="border-left-color: #ffc107;">
-                    <h3>⚠️ Precaución Media</h3>
-                    <ul style="margin-top: 0.5rem; margin-left: 1.2rem;">
-                        <li><strong>Xi'an:</strong> Barrio Musulmán tiene opciones naturales GF (carnes, arroz)</li>
-                        <li><strong>Zhangjiajie:</strong> Evitar puestos callejeros. Priorizar hotel Pullman</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="important-note">
-                <strong>📝 Frase para incluir en contrato:</strong><br>
-                <em>"We require written confirmation that all guides have been briefed on strict celiac protocols: no wheat-based soy sauce, no shared cooking surfaces, and dedicated utensils for our daughter. Guides must personally supervise lunch preparation at all non-international restaurants."</em>
-            </div>
-        </div>
-
-        <!-- Clima -->
-        <div class="section">
-            <h2>🌤️ Clima en Agosto</h2>
-            <div class="weather-info">
-                <div class="weather-card">
-                    <h4>🏯 Beijing</h4>
-                    <div class="temp-range">22°C - 31°C</div>
-                    <p>Humedad: 70%</p>
-                    <small>Lluvias moderadas</small>
-                </div>
-                <div class="weather-card">
-                    <h4>🗿 Xi'an</h4>
-                    <div class="temp-range">23°C - 32°C</div>
-                    <p>Humedad: 65%</p>
-                    <small>Cálido y seco</small>
-                </div>
-                <div class="weather-card">
-                    <h4>🏔️ Zhangjiajie</h4>
-                    <div class="temp-range">24°C - 33°C</div>
-                    <p>Humedad: 80-90%</p>
-                    <small>Muy húmedo, lluvias vespertinas</small>
-                </div>
-                <div class="weather-card">
-                    <h4>🌆 Shanghai</h4>
-                    <div class="temp-range">25°C - 33°C</div>
-                    <p>Humedad: 75-85%</p>
-                    <small>Caluroso y húmedo</small>
-                </div>
-            </div>
-
-            <div class="itinerary-day" style="margin-top: 1.5rem;">
-                <h4>🎒 Recomendaciones de Equipaje</h4>
-                <ul>
-                    <li><strong>Ropa:</strong> Tejidos transpirables (lino, algodón técnico), colores claros</li>
-                    <li><strong>Calzado:</strong> Zapatillas antideslizantes (imprescindible en Zhangjiajie), sandalias cómodas</li>
-                    <li><strong>Protección:</strong> Gorra/sombrero, gafas de sol, protector solar SPF50+, paraguas o poncho ligero</li>
-                    <li><strong>Hidratación:</strong> Botella reutilizable (la agencia incluye agua embotellada), suero oral en polvo</li>
-                    <li><strong>Extras:</strong> Chaqueta fina para aire acondicionado (muy fuerte en interiores), repelente de insectos</li>
-                    <li><strong>Documentación:</strong> Copias del pasaporte, seguro de viaje, tarjetas de celiaquía en chino</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Próximos Pasos -->
-        <div class="section">
-            <h2>📝 Próximos Pasos</h2>
-            <div class="itinerary-day">
-                <h4>1️⃣ Confirmar con China Highlights</h4>
-                <ul>
-                    <li>Enviar solicitud de cotización oficial con las modificaciones</li>
-                    <li>Solicitar confirmación escrita del protocolo celiaquía</li>
-                    <li>Confirmar disponibilidad del vuelo Zhangjiajie-Shanghai para agosto 2027</li>
-                    <li>Preguntar por referencias de viajeros celíacos anteriores</li>
-                </ul>
-            </div>
-
-            <div class="itinerary-day">
-                <h4>2️⃣ Vuelos Internacionales</h4>
-                <ul>
-                    <li>Monitorizar precios desde enero 2027 (Google Flights con alertas)</li>
-                    <li>Ruta sugerida: Madrid/Barcelona → Beijing (entrada) | Shanghai → Madrid/Barcelona (salida)</li>
-                    <li>Mejores precios: 6-8 meses antes del viaje</li>
-                    <li>Presupuesto estimado: €600-900 por persona</li>
-                </ul>
-            </div>
-
-            <div class="itinerary-day">
-                <h4>3️⃣ Documentación</h4>
-                <ul>
-                    <li><strong>Visado:</strong> Solicitar 3-4 meses antes (China Highlights proporciona carta de invitación)</li>
-                    <li><strong>Seguro:</strong> Contratar seguro completo (médico, cancelación, modificación) - el incluido es básico</li>
-                    <li><strong>Vacunas:</strong> Ninguna obligatoria, pero consultar con centro de vacunación internacional</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <h3>💰 Presupuesto Final Estimado</h3>
-                <p style="font-size: 1.3rem;"><strong>€3.398 - €3.698 por persona</strong></p>
-                <p>(Tour + hoteles + vuelos internacionales estimados)</p>
-                <p style="margin-top: 1rem; font-size: 1.1rem;">✅ <strong>Dentro del límite de €4.000 por persona</strong></p>
-            </div>
-        </div>
-
-        <!-- Información Importante -->
-        <div class="section">
-            <h2>ℹ️ Información Importante</h2>
-            
-            <div class="important-note">
-                <strong>💳 Métodos de Pago China Highlights:</strong><br>
-                • PayPal, Visa, MasterCard, American Express (recomendado)<br>
-                • Transferencia bancaria (datos en propuesta original)<br>
-                • Depósito: 10% (~€1.399) | Pago final: antes del 2 de julio 2027
-            </div>
-
-            <div class="important-note">
-                <strong>📱 Guías e Idioma:</strong><br>
-                • Beijing/Xi'an/Shanghai: Guía en español<br>
-                • Zhangjiajie: Guía en inglés (nivel limitado de español en zonas remotas)<br>
-                • Disponibilidad 8 horas/día máximo
-            </div>
-
-            <div class="important-note">
-                <strong>💡 Propinas (orientativo, no obligatorio):</strong><br>
-                • Grupo 5 personas: CNY 50-70/día/persona al guía<br>
-                • Conductor: la mitad del guía<br>
-                • Botones hotel: CNY 10 por bulto
-            </div>
-
-            <div class="celiac-alert">
-                <h3>⚠️ Aviso Legal</h3>
-                <p>La información sobre visados, políticas de vuelo y tipo de cambio puede cambiar con el tiempo. Se recomienda verificar todos los requisitos 3-4 meses antes del viaje y confirmar directamente con las aerolíneas y embajada china.</p>
-            </div>
-        </div>
+    <div class="action-bar">
+        <button onclick="window.print()">🖨️ Guardar como PDF / Imprimir</button>
     </div>
 
+    <!-- Ficha Técnica -->
+    <section>
+        <h2>📋 Ficha Técnica del Viaje</h2>
+        <table class="info-table">
+            <tr>
+                <th>Fechas</th>
+                <td>18 – 29 de agosto de 2027</td>
+            </tr>
+            <tr>
+                <th>Viajeros</th>
+                <td>5 pax: 3 adultos (45, 48, 53) + 2 jóvenes (14 y 18 años)</td>
+            </tr>
+            <tr>
+                <th>Presupuesto base</th>
+                <td>~2.798 €/persona (tour + hoteles). Vuelos internacionales aparte (~750 €/persona estim.)</td>
+            </tr>
+            <tr>
+                <th>Guías</th>
+                <td>🇪🇸 Español: Beijing, Xi'an, Shanghai | 🇬🇧 Inglés: Zhangjiajie (vocabulario médico verificado)</td>
+            </tr>
+            <tr>
+                <th>Nota crítica</th>
+                <td>🟢 <strong>CELIAQUÍA ESTRICTA</strong> — Protocolos anti-contaminación cruzada no negociables. Tarjeta médica en chino obligatoria.</td>
+            </tr>
+            <tr>
+                <th>Modificaciones aplicadas</th>
+                <td>
+                    ✅ Eliminación de Furong (Día 9 original) <span class="removed-tag">ELIMINADO</span><br>
+                    ✅ Eliminación día libre en Shanghai (Día 13 original) <span class="removed-tag">ELIMINADO</span><br>
+                    ✅ Vuelo directo Zhangjiajie → Shanghai (vs. tren original) <span class="optimized-tag">OPTIMIZADO</span>
+                </td>
+            </tr>
+        </table>
+        <div class="important-note">
+            ⚠️ Los precios, tipos de cambio (1 EUR ≈ 7.90 CNY), requisitos de visado y horarios pueden cambiar. Verificar 3-4 meses antes de la salida.
+        </div>
+    </section>
+
+    <!-- Presupuesto -->
+    <section>
+        <h2>💵 Resumen Presupuestario</h2>
+        <table class="info-table">
+            <tr>
+                <th>Total tour + hoteles (5 personas)</th>
+                <td><strong>~CNY 110.500</strong> (~€13.990)</td>
+            </tr>
+            <tr>
+                <th>Por adulto (habitación doble)</th>
+                <td>~CNY 22.100 (~€2.798)</td>
+            </tr>
+            <tr>
+                <th>Por adulto (cama extra)</th>
+                <td>~CNY 21.300 (~€2.696)</td>
+            </tr>
+            <tr>
+                <th>Ahorro neto vs. original</th>
+                <td><strong>~CNY 8.600</strong> (~€1.090) — Reducción del 7.2%</td>
+            </tr>
+            <tr>
+                <th>Depósito (10%)</th>
+                <td>~CNY 11.050 (~€1.399)</td>
+            </tr>
+            <tr>
+                <th>Pago final</th>
+                <td>Antes del 2 de julio de 2027</td>
+            </tr>
+        </table>
+        
+        <div class="budget-summary">
+            <div>TOTAL ESTIMADO POR PERSONA</div>
+            <div class="amount">€3.398 – €3.698</div>
+            <div>(Incluye tour, hoteles + vuelos internacionales estimados)</div>
+            <div class="note">✅ Dentro del límite de €4.000 por persona</div>
+        </div>
+    </section>
+
+    <!-- Itinerario -->
+    <section>
+        <h2>🗓️ Itinerario Detallado (Día a Día)</h2>
+        
+        <!-- Día 1 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 1 | Miércoles 18/08/2027 → Llegada a Beijing</td>
+            </tr>
+            <tr>
+                <th style="width:15%">Hora</th>
+                <th style="width:50%">Actividad</th>
+                <th style="width:20%">Enlace / Info</th>
+                <th style="width:15%">Duración</th>
+            </tr>
+            <tr>
+                <td>Todo el día</td>
+                <td>Traslado privado Aeropuerto PEK → Hotel</td>
+                <td><a href="https://www.bcia.com.cn/en" target="_blank">Beijing Capital Airport</a></td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>Tarde</td>
+                <td>Check-in y descanso (aclimatación)</td>
+                <td>—</td>
+                <td>—</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> <a href="https://beijing-tongpai.hotelsnewworld.com/" target="_blank">Beijing Peace Hotel 4*</a> — Habitación Deluxe</p>
+        <p class="important-note">💡 Consejo: Activar roaming/WeChat Pay en el hotel. Evitar actividades el día de llegada por jet lag.</p>
+
+        <!-- Día 2 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 2 | Jueves 19/08/2027 → Beijing Imperial</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:30</td>
+                <td>🏛️ Plaza de Tian'anmen</td>
+                <td><a href="https://english.beijing.gov.cn/" target="_blank">Beijing Gov</a></td>
+                <td>45 min</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>🏯 <a href="https://www.dpm.org.cn" target="_blank">Ciudad Prohibida</a> (reserva obligatoria online)</td>
+                <td>UNESCO</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td>13:30</td>
+                <td>🍜 Almuerzo (ver protocolo celiaquía)</td>
+                <td>Restaurante local seleccionado</td>
+                <td>1h</td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td>🌳 <a href="https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/" target="_blank">Templo del Cielo</a></td>
+                <td>UNESCO</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>🏮 Calle Qianmen & Dashilan</td>
+                <td><a href="https://r.visitbeijing.com.cn/" target="_blank">Visit Beijing</a></td>
+                <td>1.5h</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Beijing Peace Hotel 4* | <strong>🍽️ Comidas:</strong> Desayuno + Almuerzo incluido</p>
+
+        <!-- Día 3 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 3 | Viernes 20/08/2027 → Gran Muralla & Palacio de Verano</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>07:30</td>
+                <td>🚗 Traslado a <a href="https://en.mutianyugreatwall.com/" target="_blank">Mutianyu</a></td>
+                <td>~1.5h desde Beijing</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>🏔️ Teleférico subida + descenso telesilla/trineo</td>
+                <td><a href="https://en.mutianyugreatwall.com/reservation-center/tickets" target="_blank">Reserva</a></td>
+                <td>2.5h</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>🍲 Almuerzo (confirmar aceite limpio, sin salsa de soja con trigo)</td>
+                <td>Restaurante local</td>
+                <td>1h</td>
+            </tr>
+            <tr>
+                <td>13:30</td>
+                <td>🌊 <a href="https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/" target="_blank">Palacio de Verano</a></td>
+                <td>Lago Kunming</td>
+                <td>2.5h</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Beijing Peace Hotel 4* | <strong>🚗 Transporte:</strong> Vehículo privado</p>
+
+        <!-- Día 4 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 4 | Sábado 21/08/2027 → Beijing → Xi'an (Tren AVE)</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:30</td>
+                <td>🕉️ <a href="https://www.chinadiscovery.com/beijing/lama-temple.html" target="_blank">Templo del Lama</a></td>
+                <td>Templo tibetano activo</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>🛖 Hutongs + Visita familiar guiada</td>
+                <td>Experiencia cultural</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td>🚄 Tren AVE Beijing Oeste → Xi'an Norte (G323)</td>
+                <td><a href="https://www.12306.cn/en/" target="_blank">China Railway</a></td>
+                <td>~5h</td>
+            </tr>
+            <tr>
+                <td>19:30</td>
+                <td>🚗 Traslado + Check-in Xi'an</td>
+                <td><a href="https://grand-new-world.xiancityhotel.com/en/" target="_blank">Xi'an Eastern House Boutique 4*</a></td>
+                <td>—</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Xi'an Eastern House Boutique 4* | <strong>🚄 Clase:</strong> 2ª clase tren AVE</p>
+
+        <!-- Día 5 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 5 | Domingo 22/08/2027 → Xi'an Imperial</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:30</td>
+                <td>🚗 Traslado a <a href="https://www.bmy.com.cn" target="_blank">Ejército de Terracota</a></td>
+                <td>~1h desde centro</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>🏺 Pabellones 1-2-3 + Museo de Bronces</td>
+                <td>Museo Emperador Qin</td>
+                <td>2.5h</td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td>🏰 <a href="https://en.shaanxi.gov.cn/tourism/te/201705/t20170516_1594583_wap.html" target="_blank">Muralla de Xi'an</a> (opción bicicleta)</td>
+                <td>Defensa medieval completa</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <td>16:30</td>
+                <td>🕌 Barrio Musulmán & <a href="https://www.greatmosque.cn/en/" target="_blank">Gran Mezquita</a></td>
+                <td>Arquitectura sino-islámica</td>
+                <td>2h</td>
+            </tr>
+        </table>
+        <div class="celiac-alert">
+            <strong>⚠️ Protocolo Celiaquía:</strong> El Barrio Musulmán tiene opciones naturales sin gluten (carnes a la parrilla, arroz, frutos secos). El guía supervisará la preparación y evitará contaminación cruzada.
+        </div>
+        <p><strong>🏨 Hotel:</strong> Xi'an Eastern House Boutique 4* | <strong>🍽️ Comidas:</strong> Desayuno + Almuerzo incluido</p>
+
+        <!-- Día 6 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 6 | Lunes 23/08/2027 → Xi'an → Zhangjiajie</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:30</td>
+                <td>🏛️ <a href="https://www.xianmuseum.cn/en/" target="_blank">Museo de Historia de Shaanxi</a> + Pequeña Pagoda</td>
+                <td>Colección Tang</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>🏯 <a href="https://www.chinahighlights.com/xian/attraction/big-wild-goose-pagoda.htm" target="_blank">Gran Pagoda del Ganso Salvaje</a></td>
+                <td>Símbolo urbano de Xi'an</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>18:30</td>
+                <td>✈️ Vuelo Xi'an (XIY) → Zhangjiajie (DYG) | 3U3257</td>
+                <td>~1.5h vuelo directo</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td>🚗 Traslado a Wulingyuan + Check-in</td>
+                <td><a href="https://www.booking.com/hotel/cn/sunshine-resort-wulingyuan.html" target="_blank">Pullman Zhangjiajie 4*</a></td>
+                <td>~1h</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Pullman Zhangjiajie 4* | <strong>✈️ Nota:</strong> Cocina internacional disponible (confirmar opciones GF)</p>
+
+        <!-- Día 7 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 7 | Martes 24/08/2027 → Parque Nacional Zhangjiajie</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td>🌲 <a href="https://zjjnfp.com/" target="_blank">Parque Nacional Forestal de Zhangjiajie</a></td>
+                <td>Yuanjiajie + Ascensor Bailong</td>
+                <td>4h</td>
+            </tr>
+            <tr>
+                <td>12:30</td>
+                <td>🍲 Almuerzo (arroz + verduras, aceite limpio, sin salsa de soja con trigo)</td>
+                <td>Restaurante dentro del parque</td>
+                <td>1h</td>
+            </tr>
+            <tr>
+                <td>13:30</td>
+                <td>⛰️ Montaña Tianzi + Teleférico bajada</td>
+                <td>"Mar de Nubes", 80 plataformas naturales</td>
+                <td>2.5h</td>
+            </tr>
+            <tr>
+                <td>16:30</td>
+                <td>🚂 Galería Natural 10 Li (tren panorámico)</td>
+                <td>Ida y vuelta</td>
+                <td>1h</td>
+            </tr>
+        </table>
+        <p class="important-note">
+            <strong>🥾 Importante:</strong> Calzado antideslizante obligatorio. Senderos húmedos en agosto. Pocas señales en inglés. Evitar horas pico en ascensores.
+        </p>
+        <p><strong>🏨 Hotel:</strong> Pullman Zhangjiajie 4* | <strong>🚗 Transporte:</strong> Vehículo privado</p>
+
+        <!-- Día 8 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 8 | Miércoles 25/08/2027 → Montaña Tianmen</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td>🌊 <a href="https://www.cn-zhangjiajie.com/" target="_blank">Lago Baofeng</a> (opcional)</td>
+                <td>Bote tradicional, paisaje karst</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>🏔️ <a href="https://thetianmenmountain.com/" target="_blank">Montaña Tianmen</a></td>
+                <td>Pasarela de cristal + teleférico más largo del mundo</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td>16:30</td>
+                <td>🚗 Regreso al hotel + tiempo libre</td>
+                <td>Descanso antes del vuelo de mañana</td>
+                <td>—</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Pullman Zhangjiajie 4* | <strong>🍽️ Comidas:</strong> Desayuno + Almuerzo incluido</p>
+
+        <!-- Día 9 - MODIFICADO -->
+        <table class="itinerary-table">
+            <tr class="day-header modified-day">
+                <td colspan="4">
+                    📍 DÍA 9 | Jueves 26/08/2027 → Zhangjiajie → Shanghai 
+                    <span class="optimized-tag">✈️ VUELO DIRECTO</span>
+                </td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>Mañana</td>
+                <td>Tiempo libre en Zhangjiajie o descanso</td>
+                <td>—</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>~14:00</td>
+                <td>✈️ <strong>Vuelo directo</strong> Zhangjiajie (DYG) → Shanghai (PVG/SHA)</td>
+                <td>~2h vuelo | China Southern / Shanghai Airlines</td>
+                <td>~2h + trámites</td>
+            </tr>
+            <tr>
+                <td>~18:00</td>
+                <td>🚗 Traslado aeropuerto → hotel en Shanghai</td>
+                <td>—</td>
+                <td>~1h</td>
+            </tr>
+            <tr>
+                <td>19:30</td>
+                <td>🌆 The Bund al atardecer (primer contacto con Shanghai)</td>
+                <td><a href="https://english.shanghai.gov.cn/" target="_blank">Shanghai Gov</a></td>
+                <td>1.5h</td>
+            </tr>
+        </table>
+        <div class="important-note">
+            <strong>✅ Optimización aplicada:</strong> Se eliminan ~5 horas de viaje vs. el tren original Furongzhen→Shanghai. Más cómodo para el grupo, especialmente en agosto con calor y humedad. Menos traslados con equipaje.
+        </div>
+        <p><strong>🏨 Hotel:</strong> <a href="https://www.ssawboutiquehotelshanghaibund.com/" target="_blank">Hengshan Garden Hotel 4*</a> | <strong>🍽️ Comidas:</strong> Desayuno incluido</p>
+
+        <!-- Día 10 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 10 | Viernes 27/08/2027 → Shanghai Clásica</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>🏮 <a href="https://www.yuyuantm.com.cn/" target="_blank">Jardín Yuyuan</a> + Bazar de la Ciudad de Dios</td>
+                <td>Arquitectura Ming, Patrimonio UNESCO</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>🌆 <a href="https://en.shanghaitower.com/Home1.html" target="_blank">Shanghai Tower</a> (observatorio piso 118)</td>
+                <td>2º edificio más alto del mundo (632m)</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td>🌉 The Bund & Calle Nanjing Este</td>
+                <td>Edificios coloniales + rascacielos futuristas</td>
+                <td>2.5h</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Hengshan Garden Hotel 4* | <strong>🚗 Transporte:</strong> Vehículo privado</p>
+
+        <!-- Día 11 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 11 | Sábado 28/08/2027 → Shanghai Contemporánea + Suzhou</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>🕊️ <a href="https://www.jadebuddhatemple.org/en/" target="_blank">Templo del Buda de Jade</a></td>
+                <td>Santuario activo con dos estatuas de jade blanco</td>
+                <td>1.5h</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>🌳 Antigua Concesión Francesa (zona Xintiandi)</td>
+                <td>Arquitectura colonial, cafés, tiendas</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td>🚗 Excursión a <a href="https://www.tonglilake.com/en/" target="_blank">Pueblo Acuático Tongli</a></td>
+                <td>Canales Ming/Qing, barca tradicional incluida</td>
+                <td>3h (220km ida y vuelta)</td>
+            </tr>
+        </table>
+        <p><strong>🏨 Hotel:</strong> Hengshan Garden Hotel 4* | <strong>🍽️ Comidas:</strong> Desayuno + Almuerzo incluido</p>
+
+        <!-- Día 12 -->
+        <table class="itinerary-table">
+            <tr class="day-header">
+                <td colspan="4">📍 DÍA 12 | Domingo 29/08/2027 → Salida desde Shanghai</td>
+            </tr>
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Enlace</th>
+            </tr>
+            <tr>
+                <td>07:30</td>
+                <td>🚗 Traslado Hotel → Aeropuerto Pudong (PVG)</td>
+                <td><a href="https://www.shanghaiairport.com/" target="_blank">Shanghai Pudong Airport</a></td>
+            </tr>
+            <tr>
+                <td>09:30</td>
+                <td>Check-in vuelo internacional</td>
+                <td>Llegar 3h antes recomendado</td>
+            </tr>
+        </table>
+        <p class="important-note">
+            <strong>✅ Itinerario optimizado:</strong> 12 días efectivos (vs. 14 originales). Eliminados Furong y día libre en Shanghai. Más tiempo de calidad en destinos clave.
+        </p>
+    </section>
+
+    <!-- Hoteles -->
+    <section>
+        <h2>🏨 Alojamientos Propuestos</h2>
+        <table class="hotel-table">
+            <tr>
+                <th>Ciudad</th>
+                <th>Hotel</th>
+                <th>Enlace</th>
+                <th>Notas</th>
+            </tr>
+            <tr>
+                <td>Beijing (3 noches)</td>
+                <td>Beijing Peace Hotel 4*</td>
+                <td><a href="https://beijing-tongpai.hotelsnewworld.com/" target="_blank">Web oficial</a></td>
+                <td>Céntrico, minibar, inglés básico, cerca Wangfujing</td>
+            </tr>
+            <tr>
+                <td>Xi'an (2 noches)</td>
+                <td>Xi'an Eastern House Boutique 4*</td>
+                <td><a href="https://grand-new-world.xiancityhotel.com/en/" target="_blank">Web oficial</a></td>
+                <td>Estilo tradicional, cerca Muralla, patio interior</td>
+            </tr>
+            <tr>
+                <td>Zhangjiajie (3 noches)</td>
+                <td>Pullman Zhangjiajie 4*</td>
+                <td><a href="https://www.booking.com/hotel/cn/pullman-zhangjiajie.html" target="_blank">Booking</a></td>
+                <td>Zona Wulingyuan, A/C potente, cocina internacional (GF disponible)</td>
+            </tr>
+            <tr>
+                <td>Shanghai (3 noches)</td>
+                <td>Hengshan Garden Hotel 4*</td>
+                <td><a href="https://www.booking.com/hotel/cn/hengshan-garden.html" target="_blank">Booking</a></td>
+                <td>Concesión Francesa, zona tranquila, bilingüe, jardín</td>
+            </tr>
+        </table>
+        <p class="important-note">
+            ✅ Solicitar por escrito: minibar vacío para snacks sin gluten, nevera extra si es posible, limpieza con productos sin aroma fuerte.
+        </p>
+    </section>
+
+    <!-- Transporte -->
+    <section>
+        <h2>🚌 Transporte & Logística</h2>
+        <table class="transport-table">
+            <tr>
+                <th>Trayecto</th>
+                <th>Medio</th>
+                <th>Duración</th>
+                <th>Clase</th>
+                <th>Enlace Info</th>
+            </tr>
+            <tr>
+                <td>Beijing → Xi'an</td>
+                <td>Tren AVE</td>
+                <td>~5h</td>
+                <td>2ª clase</td>
+                <td><a href="https://www.12306.cn/en/" target="_blank">China Railway</a></td>
+            </tr>
+            <tr>
+                <td>Xi'an → Zhangjiajie</td>
+                <td>Vuelo doméstico</td>
+                <td>~1.5h</td>
+                <td>Económica</td>
+                <td><a href="http://www.xaiport.com/" target="_blank">Aeropuerto XIY</a></td>
+            </tr>
+            <tr>
+                <td>Zhangjiajie → Shanghai</td>
+                <td><strong>Vuelo directo</strong> ✈️</td>
+                <td>~2h</td>
+                <td>Económica</td>
+                <td><a href="http://www.zjjairport.com/" target="_blank">Aeropuerto DYG</a></td>
+            </tr>
+            <tr>
+                <td>Traslados internos</td>
+                <td>Vehículo privado</td>
+                <td>Según ruta</td>
+                <td>Exclusivo 5 pax</td>
+                <td>—</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Celiaquía -->
+    <section>
+        <h2>🥗 Gestión Gastronómica & Celiaquía Estricta</h2>
+        <div class="celiac-alert">
+            <strong>⚠️ PROTOCOLO NO NEGOCIABLE:</strong> Guía verifica personalmente cada restaurante. Utensilios exclusivos, aceite nuevo, sin salsa de soja tradicional (contiene trigo). Tarjeta médica en chino siempre visible.
+        </div>
+        
+        <table class="shopping-table">
+            <tr>
+                <th>Ciudad</th>
+                <th>Tienda</th>
+                <th>Enlace</th>
+                <th>Productos</th>
+            </tr>
+            <tr>
+                <td>Beijing</td>
+                <td>Olé Supermarket</td>
+                <td><a href="https://www.olesupermarket.com/" target="_blank">Web</a></td>
+                <td>Arroz, fideos, snacks certificados, leches vegetales</td>
+            </tr>
+            <tr>
+                <td>Xi'an</td>
+                <td>CityShop / Olé (SKP)</td>
+                <td><a href="https://www.cityshop.cn/" target="_blank">Web</a></td>
+                <td>Selección limitada: arroz, huevos, frutas, frutos secos</td>
+            </tr>
+            <tr>
+                <td>Zhangjiajie</td>
+                <td>Tiendas locales + Hotel Pullman</td>
+                <td>Buscar "无麸质"</td>
+                <td>Opciones limitadas. Llevar reserva desde España.</td>
+            </tr>
+            <tr>
+                <td>Shanghai</td>
+                <td>Olé / Jiuguang / Green & Safe</td>
+                <td><a href="https://www.greenandsafe.com/" target="_blank">Green & Safe</a></td>
+                <td>Mayor variedad: panes, galletas, pasta, quesos importados</td>
+            </tr>
+        </table>
+        
+        <p class="important-note">
+            📌 <strong>Recomendación:</strong> Empacar 3-4 kg de snacks seguros desde España. China importa productos sin gluten, pero la disponibilidad fuera de Shanghai/Beijing es irregular.
+        </p>
+        
+        <div class="celiac-alert">
+            <strong>📝 Frase para incluir en contrato con China Highlights:</strong><br>
+            <em>"We require written confirmation that all guides have been briefed on strict celiac protocols: no wheat-based soy sauce, no shared cooking surfaces, and dedicated utensils for our daughter. Guides must personally supervise lunch preparation at all non-international restaurants."</em>
+        </div>
+    </section>
+
+    <!-- Clima -->
+    <section>
+        <h2>🌤️ Clima en Agosto & Cultura</h2>
+        <table class="weather-table">
+            <tr>
+                <th>Ciudad</th>
+                <th>Temp.</th>
+                <th>Humedad</th>
+                <th>Lluvias</th>
+                <th>Recomendación</th>
+            </tr>
+            <tr>
+                <td>Beijing</td>
+                <td>24–32°C</td>
+                <td>55–65%</td>
+                <td>Moderadas</td>
+                <td>Ropa transpirable, chubasquero, calzado cerrado</td>
+            </tr>
+            <tr>
+                <td>Xi'an</td>
+                <td>26–35°C</td>
+                <td>60–70%</td>
+                <td>Tardes</td>
+                <td>Sombrero, SPF50, algodón</td>
+            </tr>
+            <tr>
+                <td>Zhangjiajie</td>
+                <td>26–33°C</td>
+                <td>75–85%</td>
+                <td>Llovizna/neblina</td>
+                <td><strong>Calzado antideslizante</strong>, paraguas, chaqueta ligera</td>
+            </tr>
+            <tr>
+                <td>Shanghai</td>
+                <td>27–34°C</td>
+                <td>70–80%</td>
+                <td>Tormentas/tifones</td>
+                <td>Secado rápido, sandalias soporte, mascarilla smog</td>
+            </tr>
+        </table>
+        
+        <h3 style="margin-top:1.5rem; font-size:1.2rem;">🏮 Normas Prácticas</h3>
+        <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+            <li><strong>🧧 Propinas:</strong> 50–100 CNY/día guía | 30–50 CNY/día conductor (orientativo, no obligatorio)</li>
+            <li><strong>💳 Pagos:</strong> Alipay/WeChat Pay dominan. Vincular tarjeta internacional antes del viaje.</li>
+            <li><strong>📱 Internet:</strong> Google/WhatsApp bloqueados. Usar eSIM con VPN o roaming libre.</li>
+            <li><strong>🚻 Baños:</strong> Predomina estilo squat. Llevar papel higiénico y desinfectante de manos.</li>
+            <li><strong>🙏 Etiqueta:</strong> No clavar palillos en arroz. Dejar un poco de comida indica saciedad.</li>
+        </ul>
+    </section>
+
+    <!-- Notas finales -->
+    <section>
+        <h2>ℹ️ Información Importante</h2>
+        
+        <div class="important-note">
+            <strong>💳 Métodos de Pago China Highlights:</strong><br>
+            • PayPal, Visa, MasterCard, American Express (recomendado)<br>
+            • Transferencia bancaria (datos en propuesta oficial)<br>
+            • Depósito: 10% (~€1.399) | Pago final: antes del 2 de julio 2027
+        </div>
+
+        <div class="important-note">
+            <strong>📱 Guías e Idioma:</strong><br>
+            • Beijing/Xi'an/Shanghai: Guía en español<br>
+            • Zhangjiajie: Guía en inglés (nivel limitado de español en zonas remotas)<br>
+            • Disponibilidad 8 horas/día máximo
+        </div>
+
+        <div class="celiac-alert">
+            <strong>⚠️ Aviso Legal:</strong> La información sobre visados, políticas de vuelo y tipo de cambio puede cambiar con el tiempo. Se recomienda verificar todos los requisitos 3-4 meses antes del viaje y confirmar directamente con las aerolíneas y embajada china.
+        </div>
+    </section>
+
     <footer>
-        <p>🏮 Viaje a China 2027 - Carlos & Familia 🏮</p>
-        <p>Propuesta China Highlights modificada | 1-14 Agosto 2027</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">
-            <em>"La mejor manera de predecir el futuro es creándolo"</em>
+        <p>🏮 China Highlights: Triángulo Dorado + Zhangjiajie — Itinerario Familiar 2027 🏮</p>
+        <p>Propuesta modificada | 18-29 Agosto 2027 | 5 viajeros</p>
+        <p style="margin-top:1rem; font-size:0.85rem; color:#999;">
+            Documento generado para uso familiar. Los enlaces son estables a 2026 y pueden requerir verificación antes de viajar.<br>
+            Para convertir a PDF: <code>Ctrl/Cmd + P → Guardar como PDF</code>.
         </p>
     </footer>
 
-    <button class="print-btn" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
-
     <script>
-        // Smooth scroll para navegación
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animación al cargar
-        window.addEventListener('load', () => {
-            document.querySelectorAll('.itinerary-day, .info-card').forEach((el, index) => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    el.style.transition = 'all 0.5s ease';
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }, index * 100);
-            });
+        // Smooth print button feedback
+        document.querySelector('.action-bar button').addEventListener('click', function() {
+            this.textContent = '🖨️ Preparando PDF...';
+            setTimeout(() => {
+                this.textContent = '🖨️ Guardar como PDF / Imprimir';
+            }, 2000);
         });
     </script>
 </body>
